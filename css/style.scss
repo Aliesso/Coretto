@@ -1,0 +1,126 @@
+a:hover {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    padding: 15px 50px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    .logo {
+        img {
+            width: 50%;
+        }
+    }
+    .menu {
+        li {
+            padding: 15px 5px;
+            a {
+                color: #ffffff;
+                padding: 15px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 15px;
+                    bottom: 0;
+                    width: 0;
+                    height: 2px;
+                    background: #ffffff;
+                    transition: width .3s ease-in-out;
+                }
+                &:hover {
+                    &::after {
+                        width: 80%;
+                        left: 15px;
+                    }
+                }
+                .active {
+                    border: 2px solid #ffffff
+                }
+            }
+            i {
+                color: #ffffff;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+.slider {
+    width: 1500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    .next,
+    .prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .next {
+        right: 20px;
+    }
+    .prev {
+        left: 20px;
+    }
+    ul {
+        position: relative;
+        left: 0;
+        li {
+            position: relative;
+            img {
+                object-fit: cover;
+                width: 100%;
+                vertical-align: middle;
+            }
+            .slider-text {
+                position: absolute;
+                top: 50%;
+                right: 20em;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.delicious {
+    padding: 60px 0;
+    .delicious-text {
+        padding: 0 18em;
+        h2 {
+            font-size: 45px;
+            color: #262626;
+        }
+        h6 {
+            font-size: 20px;
+            color: #262626;
+            font-weight: 300;
+            padding: 20px 0;
+        }
+    }
+    .delicious-items {
+        .item-img {
+            padding: 25px 0;
+        }
+        .item-text {
+            span {
+                font-size: 20px;
+                color: #262626;
+            }
+            p {
+                padding: 10px 0;
+                font-size: 15px;
+                color: #656565;
+            }
+        }
+    }
+}
