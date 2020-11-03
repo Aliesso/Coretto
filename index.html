@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="vendors/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,7 +18,7 @@
                     <img src="image/logo-light.png" alt="">
                 </div>
                 <nav class="menu">
-                    <ul class="d-flex list-unstyled">
+                    <ul class="d-flex flex-wrap list-unstyled">
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">PAGES</a></li>
                         <li><a href="#">PORTOFILO</a></li>
@@ -25,6 +27,7 @@
                         <li><a href="#">ELEMENTS</a></li>
                         <li><i class="fas fa-shopping-basket"></i></li>
                         <li><i class="fas fa-search"></i></li>
+                        <li><i class="fas fa-bars bars"></i></li>
                     </ul>
                 </nav>
             </div>
@@ -33,22 +36,30 @@
     <section class="slider">
         <ul class="list-unstyled d-flex">
             <li>
-                <img  src="image/homeimage.jpg" alt="">
+                <img class="img-fluid"  src="image/homeimage.jpg" alt="">
                 <div class="slider-text">
-                    <img src="image/img-logo.png" alt="">
-                    <h1>COFFEE FACTORY</h1>
+                    <div class="col-lg-6">
+                        <img src="image/img-logo.png" alt="">
+                        <h1>COFFEE FACTORY</h1>
+                    </div>
                 </div>
             </li>
             <li>
-                <img  src="image/homeimage2.jpg" alt="">
+                <img class="img-fluid"  src="image/homeimage2.jpg" alt="">
                 <div class="slider-text">
-                    <img src="image/img-logo.png" alt="">
+                    <div class="col-lg-6">
+                        <img src="image/img-logo.png" alt="">
+                        <h1>COFFEE FACTORY</h1>
+                    </div>
                 </div>
             </li>
             <li>
-                <img  src="image/homeimage3.jpg" alt="">
+                <img class="img-fluid"  src="image/homeimage3.jpg" alt="">
                 <div class="slider-text">
-                    <img src="image/img-logo.png" alt="">
+                    <div class="col-lg-6">
+                        <img src="image/img-logo.png" alt="">
+                        <h1>COFFEE FACTORY</h1>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -61,14 +72,16 @@
     </section>
     <section class="delicious">
         <div class="container">
-            <div class="delicious-text text-center align-items-center">
-                <h2>OUR DELICIOUS OFFER</h2>
-                <img src="image/coffe.png" alt="">
-                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h6>
+            <div class="delicious-text text-center justify-content-center d-flex  align-items-center">
+                <div class="col-lg-6">
+                    <h2>OUR DELICIOUS OFFER</h2>
+                    <img src="image/coffe.png" alt="">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h6>
+                </div>
             </div>
             <div class="delicious-items text-center">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <div class="item-img">
                             <img src="image/delicious-1.png" alt="">
                         </div>
@@ -77,7 +90,7 @@
                             <p>Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo</p>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <div class="item-img">
                             <img src="image/delicious-2.png" alt="">
                         </div>
@@ -86,7 +99,7 @@
                             <p>Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo</p>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <div class="item-img">
                             <img src="image/delicious-3.png" alt="">
                         </div>
@@ -95,7 +108,7 @@
                             <p>Lorem ipsum dolor sit ametal, consectetuer adipiscing elitus. Aeneantos commodo</p>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <div class="item-img">
                             <img src="image/delicious-4.png" alt="">
                         </div>
@@ -107,6 +120,245 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section id="herald"> 
+        <div class="container">
+            <div class="herald-text d-flex text-center align-items-center justify-content-center">
+                <div class="col-lg-6 ">
+                    <h2>THE COFFEE HERALD</h2>
+                    <img src="image/coffe.png" alt="">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h6>
+                </div>
+            </div>
+            <div class="herald-items">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item-img ">
+                            <img class="img-fluid" src="image/blog-1.jpg" alt="">
+                        </div>
+                        <div class="item-text">
+                            <a href="#">PREP TECHNIQUES</a>
+                            <p>Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,</p>
+                            <span>READ MORE</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item-img ">
+                            <img class="img-fluid" src="image/blog-2.jpg" alt="">
+                        </div>
+                        <div class="item-text">
+                            <a href="#">FRENCH PRESS</a>
+                            <p>Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,</p>
+                            <span>READ MORE</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item-img ">
+                            <img class="img-fluid" src="image/blog-3.jpg" alt="">
+                        </div>
+                        <div class="item-text">
+                            <a href="#">TURKISH IBRIK</a>
+                            <p>Quisque rutrum, aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi, nam eget dui. Etiam rhoncus maecenas tempus,</p>
+                            <span>READ MORE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="coffe">
+        <div class="container">
+            <div class="fixed-logo text-center align-items-center">
+                <img src="image/fixed.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="numbers text-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <span>250</span>
+                    <h5>VARIETIES OF COFFEE</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
+                </div>
+                <div class="col-lg-3">
+                    <span>123</span>
+                    <h5>HOURS OF TESTING</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
+                </div>
+                <div class="col-lg-3">
+                    <span>321</span>
+                    <h5>COFFEE MARKETS</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
+                </div>
+                <div class="col-lg-3">
+                    <span>220</span>
+                    <h5>COFFEE BRANDS</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="coffe-shop">
+        <div class="container">
+            <div class="shop-text d-flex align-items-center text-center justify-content-center">
+                <div class="col-lg-6">
+                    <h2>ONLINE COFFEE SHOP</h2>
+                    <img src="image/coffe.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="item-img">
+                            <img class="img-fluid" src="image/coffe-1.png" alt="">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="item-text ">
+                            <a href="#">ETHIOPIA COFFEE</a>
+                            <br>
+                            <span>$15.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="item-img">
+                            <img class="img-fluid" src="image/coffe-2.png" alt="">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="item-text">
+                            <a href="#">KENYA COFFEE</a>
+                            <br>
+                            <span>$18.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="item-img">
+                            <img class="img-fluid" src="image/coffe-3.png" alt="">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="item-text">
+                            <a href="#">COLUMBIA COFFEE</a>
+                            <br>
+                            <span>$21.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="item-img">
+                            <img class="img-fluid" src="image/coffe-4.png" alt="">
+                            <a href="#">ADD TO CART</a>
+                        </div>
+                        <div class="item-text d-lg-block">
+                            <a href="#">GUATEMALA COFFEE</a>
+                            <br>
+                            <span>$25.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-text d-flex text-center align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <h2>OUR SWEET GALLERY</h2>
+                    <img src="image/coffe.png" alt="">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h6>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-items">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="g-item">
+                        <img class="img-fluid" src="image/gallery-1.jpg" alt="">
+                    <div class="g-text">
+                        <h2>PERFECT CUP</h2>
+                        <a href="#">Cup of Coffe/</a>
+                        <a href="#">Filtered</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="g-item">
+                        <img class="img-fluid" src="image/gallery-2.jpg" alt="">
+                    
+                    <div class="g-text">
+                        <h2>PERFECT CUP</h2>
+                        <a href="#">Cup of Coffe/</a>
+                        <a href="#">Filtered</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="g-item">
+                        <img class="img-fluid" src="image/gallery-3.jpg" alt="">
+                    
+                    <div class="g-text">
+                        <h2>PERFECT CUP</h2>
+                        <a href="#">Cup of Coffe/</a>
+                        <a href="#">Filtered</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="g-item">
+                        <img class="img-fluid" src="image/gallery-4.jpg" alt="">
+                    
+                    <div class="g-text">
+                        <h2>PERFECT CUP</h2>
+                        <a href="#">Cup of Coffe/</a>
+                        <a href="#">Filtered</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="g-item">
+                        <img class="img-fluid" src="image/gallery-5.jpg" alt="">
+                    
+                    <div class="g-text">
+                        <h2>PERFECT CUP</h2>
+                        <a href="#">Cup of Coffe/</a>
+                        <a href="#">Filtered</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="g-item">
+                        <img class="img-fluid" src="image/gallery-6.jpg" alt="">
+                    
+                    <div class="g-text">
+                        <h2>PERFECT CUP</h2>
+                        <a href="#">Cup of Coffe/</a>
+                        <a href="#">Filtered</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="g-item">
+                        <img class="img-fluid" src="image/gallery-7.jpg" alt="">
+                    
+                    <div class="g-text">
+                        <h2>PERFECT CUP</h2>
+                        <a href="#">Cup of Coffe/</a>
+                        <a href="#">Filtered</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="g-item">
+                        <img class="img-fluid" src="image/gallery-8.jpg" alt="">
+                    
+                    <div class="g-text">
+                        <h2>PERFECT CUP</h2>
+                        <a href="#">Cup of Coffe/</a>
+                        <a href="#">Filtered</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </section>
     <script src="js/app.js"></script>
 </body>
